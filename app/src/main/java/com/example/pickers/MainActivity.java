@@ -80,6 +80,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        View firstItem = binding.numberPicker.getChildAt(0);
+        if (firstItem != null) {
+            firstItem.setVisibility(View.INVISIBLE);
+        }
     }
     //To get coloum name in order
     private String getColName(int col) {
